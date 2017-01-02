@@ -1,23 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        app:srcCompat="@mipmap/color_black"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFF7DA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:id="@+id/text_layout">
+    <TextView
+        android:id="@+id/translate_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingLeft="16dp"
+        tools:text="Lutti"
+        android:paddingTop="16dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/english_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
-        tools:text="one"/>
+        android:textSize="20sp"
+        android:paddingLeft="16dp"
+        tools:text="One"
+        android:textColor="#FFFFFF"/>
 
-    <TextView
-        android:id="@+id/translate_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="32dp"
-        tools:text="Lutti"/>
+    </LinearLayout>
 
 
 </LinearLayout>
